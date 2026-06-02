@@ -8,25 +8,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <title>Top 10 Tourist Places in India</title>
   <style>
-    body { margin: 0; font-family: 'Poppins', sans-serif; background: linear-gradient(180deg, #eef6ff 0%, #f8fbff 55%, #ffffff 100%); color: #102a43; }
-    header { background: linear-gradient(135deg, #1f4978 0%, #5289e5 100%); color: #fff; padding: 30px 22px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 12px 28px rgba(31, 73, 120, 0.22); }
+    body { margin: 0; font-family: 'Poppins', sans-serif; background: radial-gradient(circle at 20% 0%, #10254b 0%, #0d1630 45%, #060d1f 100%); color: #eef4ff; }
+    header { background: linear-gradient(135deg, #2d5ab9 0%, #0f2158 100%); color: #eef4ff; padding: 30px 22px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35); }
     header h1 { margin: 0 0 10px; font-size: clamp(2rem, 3vw, 3rem); letter-spacing: 0.02em; }
-    header p { margin: 0 auto 16px; max-width: 860px; line-height: 1.6; opacity: 0.95; }
+    header p { margin: 0 auto 16px; max-width: 860px; line-height: 1.65; color: #d9e7ff; opacity: 0.95; }
     nav { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 16px; }
-    nav a { color: #f1f7ff; text-decoration: none; padding: 10px 16px; border-radius: 999px; background: rgba(255,255,255,0.18); font-weight: 700; transition: background 0.25s ease, transform 0.25s ease; }
-    nav a:hover { background: rgba(255,255,255,0.32); transform: translateY(-1px); }
+    nav a { color: #f1f7ff; text-decoration: none; padding: 10px 16px; border-radius: 999px; background: rgba(255,255,255,0.12); font-weight: 700; transition: background 0.25s ease, transform 0.25s ease; }
+    nav a:hover { background: rgba(255,255,255,0.24); transform: translateY(-1px); }
     .container { max-width: 1180px; margin: 0 auto; padding: 30px 20px 42px; }
-    .intro { margin-bottom: 28px; }
-    .intro h2 { color: #1f4978; margin-bottom: 14px; font-size: 2rem; }
-    .intro p { max-width: 860px; line-height: 1.75; color: #334e68; }
+    .intro { margin-bottom: 28px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); border-radius: 20px; padding: 24px; box-shadow: 0 18px 30px rgba(0, 0, 0, 0.25); }
+    .intro h2 { color: #f4f9ff; margin-bottom: 14px; font-size: 2rem; }
+    .intro p { max-width: 860px; line-height: 1.75; color: #d5e4ff; }
     .places-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
-    .place-card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 16px 36px rgba(16, 42, 67, 0.12); transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .place-card:hover { transform: translateY(-5px); box-shadow: 0 22px 44px rgba(16, 42, 67, 0.16); }
+    .place-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); border-radius: 20px; overflow: hidden; box-shadow: 0 16px 36px rgba(0, 0, 0, 0.30); transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .place-card:hover { transform: translateY(-5px); box-shadow: 0 22px 44px rgba(0, 0, 0, 0.35); }
     .place-card img { width: 100%; height: 170px; object-fit: cover; display: block; }
     .place-card-content { padding: 20px; }
-    .place-card h3 { margin: 0 0 10px; font-size: 1.15rem; color: #1f4978; }
-    .place-card p { margin: 0; line-height: 1.65; color: #3c5164; font-size: 0.97rem; }
-    footer { text-align: center; margin-top: 32px; padding: 20px 10px; color: #4a5b72; }
+    .place-card h3 { margin: 0 0 10px; font-size: 1.15rem; color: #f4f9ff; }
+    .place-card p { margin: 0; line-height: 1.65; color: #d9e4ff; font-size: 0.97rem; }
+    footer { text-align: center; margin-top: 32px; padding: 20px 10px; color: #aac3f2; }
     @media (max-width: 1100px) { .places-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
     @media (max-width: 900px) { .places-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
     @media (max-width: 700px) { .places-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } nav { flex-direction: column; gap: 10px; } }
@@ -53,14 +53,14 @@
 
     <div class="places-grid">
       <div class="place-card">
-        <img src="https://source.unsplash.com/900x600?taj+mahal,india" alt="Taj Mahal" />
+        <img src="https://source.unsplash.com/900x600/?agra,india" alt="Agra landmark" />
         <div class="place-card-content">
-          <h3>Taj Mahal</h3>
-          <p>The iconic white marble monument in Agra is India’s symbol of love and UNESCO World Heritage beauty.</p>
+          <h3>Agra</h3>
+          <p>Agra is a historic city in Uttar Pradesh, home to the Taj Mahal and outstanding Mughal monuments.</p>
         </div>
       </div>
       <div class="place-card">
-        <img src="https://source.unsplash.com/900x600?jaipur,india" alt="Jaipur" />
+        <img src="https://source.unsplash.com/900x600/?jaipur+hawa+mahal,india" alt="Jaipur" />
         <div class="place-card-content">
           <h3>Jaipur</h3>
           <p>Known as the Pink City, Jaipur features royal forts, palaces, bustling bazaars and rich Rajasthani culture.</p>
@@ -95,21 +95,21 @@
         </div>
       </div>
       <div class="place-card">
-        <img src="https://source.unsplash.com/900x600?udaipur,india" alt="Udaipur" />
+        <img src="https://source.unsplash.com/900x600/?udaipur+lake+pichola,india" alt="Udaipur" />
         <div class="place-card-content">
           <h3>Udaipur</h3>
           <p>The City of Lakes enchants with palace reflections, romantic boat rides and charming lakeside promenades.</p>
         </div>
       </div>
       <div class="place-card">
-        <img src="https://source.unsplash.com/900x600?hampi,india" alt="Hampi" />
+        <img src="https://source.unsplash.com/900x600/?hampi+ruins,india" alt="Hampi" />
         <div class="place-card-content">
           <h3>Hampi</h3>
           <p>Ancient ruins set among giant boulders create a mystical archaeological landscape in Karnataka.</p>
         </div>
       </div>
       <div class="place-card">
-        <img src="https://source.unsplash.com/900x600?andaman+islands,india" alt="Andaman Islands" />
+        <img src="https://source.unsplash.com/900x600/?andaman+island+beach,india" alt="Andaman Islands" />
         <div class="place-card-content">
           <h3>Andaman Islands</h3>
           <p>Crystal-clear waters, coral reefs, and white-sand beaches make the Andamans a tropical island paradise.</p>
