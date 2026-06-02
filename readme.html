@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 10 Tourist Places in India</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f5f8ff; color: #102a43; }
+    header { background: #1f4978; color: #fff; padding: 24px 20px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+    header h1 { margin: 0; font-size: clamp(1.8rem, 2.5vw, 2.8rem); }
+    header p { margin: 12px auto 0; max-width: 800px; line-height: 1.6; font-size: 1rem; }
+    nav { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 16px; }
+    nav a { color: #f1f7ff; text-decoration: none; padding: 10px 16px; border-radius: 8px; background: rgba(255,255,255,0.12); font-weight: 700; transition: background 0.25s ease; }
+    nav a:hover { background: rgba(255,255,255,0.24); }
+    .container { max-width: 1180px; margin: 0 auto; padding: 28px 20px 40px; }
+    .intro { margin-bottom: 28px; }
+    .intro h2 { color: #1f4978; margin-bottom: 12px; }
+    .intro p { max-width: 860px; line-height: 1.7; }
+    .places-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
+    .place-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 14px 30px rgba(16,42,67,0.08); transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .place-card:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(16,42,67,0.12); }
+    .place-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
+    .place-card-content { padding: 18px; }
+    .place-card h3 { margin: 0 0 10px; font-size: 1.05rem; color: #1f4978; }
+    .place-card p { margin: 0; line-height: 1.6; color: #334e68; font-size: 0.95rem; }
+    footer { text-align: center; margin-top: 30px; padding: 18px 10px; color: #4a5b72; }
+    @media (max-width: 1100px) { .places-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+    @media (max-width: 900px) { .places-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 700px) { .places-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } nav { flex-direction: column; gap: 10px; } }
+    @media (max-width: 520px) { .places-grid { grid-template-columns: 1fr; } .container { padding: 20px 14px 32px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top 10 Tourist Places in India</h1>
+    <p>Explore India’s greatest destinations with beautiful imagery and concise travel summaries arranged in a clean 5x2 grid.</p>
+    <nav>
+      <a href="myname.html">Tourist Places</a>
+      <a href="states.html">Top States</a>
+      <a href="activities.html">Activities</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="intro">
+      <h2>Top 10 Tourist Destinations</h2>
+      <p>These destinations represent the best of India’s culture, heritage, nature and adventure. Each card includes a quick description so you can choose your next travel highlight.</p>
+    </section>
+
+    <div class="places-grid">
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1533622597524-a121c2f22850?auto=format&fit=crop&w=800&q=80" alt="Taj Mahal" />
+        <div class="place-card-content">
+          <h3>Taj Mahal</h3>
+          <p>The iconic white marble monument in Agra is India’s symbol of love and UNESCO World Heritage beauty.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1549208704-8e7655c953ca?auto=format&fit=crop&w=800&q=80" alt="Jaipur" />
+        <div class="place-card-content">
+          <h3>Jaipur</h3>
+          <p>Known as the Pink City, Jaipur features royal forts, palaces, bustling bazaars and rich Rajasthani culture.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Goa beaches" />
+        <div class="place-card-content">
+          <h3>Goa Beaches</h3>
+          <p>Goa’s sandy beaches offer sunshine, nightlife, seafood and a relaxed coastal vibe along the Arabian Sea.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=80" alt="Varanasi" />
+        <div class="place-card-content">
+          <h3>Varanasi</h3>
+          <p>One of the world’s oldest living cities, Varanasi is a spiritual pilgrimage destination along the holy Ganges River.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1501426026826-31c667bdf23d?auto=format&fit=crop&w=800&q=80" alt="Kerala backwaters" />
+        <div class="place-card-content">
+          <h3>Kerala Backwaters</h3>
+          <p>Serene houseboat cruises through lush canals and palm-lined lagoons make Kerala one of India’s most peaceful escapes.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Ladakh" />
+        <div class="place-card-content">
+          <h3>Ladakh</h3>
+          <p>High-altitude deserts, Buddhist monasteries, and dramatic mountain scenery define this thrilling northern frontier.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?auto=format&fit=crop&w=800&q=80" alt="Udaipur" />
+        <div class="place-card-content">
+          <h3>Udaipur</h3>
+          <p>The City of Lakes enchants with palace reflections, romantic boat rides and charming lakeside promenades.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1533612608997-212b064800d5?auto=format&fit=crop&w=800&q=80" alt="Hampi" />
+        <div class="place-card-content">
+          <h3>Hampi</h3>
+          <p>Ancient ruins set among giant boulders create a mystical archaeological landscape in Karnataka.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Andaman Islands" />
+        <div class="place-card-content">
+          <h3>Andaman Islands</h3>
+          <p>Crystal-clear waters, coral reefs, and white-sand beaches make the Andamans a tropical island paradise.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?auto=format&fit=crop&w=800&q=80" alt="Golden Temple" />
+        <div class="place-card-content">
+          <h3>Golden Temple</h3>
+          <p>Amritsar’s Golden Temple shines as a peaceful spiritual site and a stunning example of Sikh architecture.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Use this page as a quick visual guide to the top 10 tourist places in India, with clear links to deeper travel content.</p>
+  </footer>
+</body>
+</html>
