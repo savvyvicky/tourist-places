@@ -3,40 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <title>Top Indian States for Tourism</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f3f7fb; color: #102a43; }
-    header { background: #1f4978; color: #fff; padding: 28px 20px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
-    header h1 { margin: 0 0 10px; font-size: 2.3rem; }
-    header p { margin: 10px auto 0; max-width: 800px; line-height: 1.6; font-size: 1rem; }
-    nav { margin-top: 16px; display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; align-items: center; }
-    nav a { color: #f1f7ff; text-decoration: none; font-weight: 700; padding: 10px 16px; border-radius: 8px; background: rgba(255,255,255,0.12); transition: background 0.25s ease; }
-    nav a:hover { background: rgba(255,255,255,0.22); }
-    .container { max-width: 1100px; margin: 0 auto; padding: 24px 20px 40px; }
-    .summary { background: #fff; border-radius: 14px; padding: 24px; box-shadow: 0 10px 30px rgba(16, 42, 67, 0.08); margin-bottom: 24px; }
-    .summary h2 { margin-top: 0; color: #1f4978; }
-    .summary p { line-height: 1.7; }
-    .state-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 18px; }
-    .state-card { background: #eef6ff; border-radius: 12px; padding: 18px; border-left: 6px solid #3f81c1; }
-    .state-card h3 { margin-top: 0; margin-bottom: 10px; color: #1f4978; font-size: 1rem; }
-    .state-card ul { margin: 0; padding-left: 18px; font-size: 0.95rem; }
-    .state-card li { margin-bottom: 10px; line-height: 1.5; }
-    .state-section { margin-bottom: 36px; }
-    .state-section h2 { font-size: 1.8rem; color: #1f4978; margin-bottom: 12px; }
-    .state-details { display: grid; grid-template-columns: 1fr 280px; gap: 24px; align-items: start; margin-bottom: 26px; }
-    .state-details img { width: 100%; border-radius: 14px; box-shadow: 0 8px 22px rgba(16, 42, 67, 0.08); }
-    .state-info { background: #fff; padding: 22px; border-radius: 14px; box-shadow: 0 8px 22px rgba(16, 42, 67, 0.06); }
-    .state-info h3 { margin-top: 0; color: #1f4978; }
-    .list-card { background: #fff; border-radius: 14px; padding: 22px; box-shadow: 0 8px 22px rgba(16, 42, 67, 0.06); }
+    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: linear-gradient(180deg, #f2f7ff 0%, #edf5ff 55%, #ffffff 100%); color: #102a43; }
+    header { background: linear-gradient(135deg, #1f4978 0%, #6b8edd 100%); color: #fff; padding: 32px 22px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 10px 26px rgba(31, 73, 120, 0.2); }
+    header h1 { margin: 0 0 10px; font-size: clamp(2rem, 3vw, 2.9rem); }
+    header p { margin: 0 auto 16px; max-width: 860px; line-height: 1.65; opacity: 0.94; }
+    nav { margin-top: 18px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; align-items: center; }
+    nav a { color: #f1f7ff; text-decoration: none; font-weight: 700; padding: 10px 18px; border-radius: 999px; background: rgba(255,255,255,0.18); transition: background 0.25s ease, transform 0.25s ease; }
+    nav a:hover { background: rgba(255,255,255,0.3); transform: translateY(-1px); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 26px 20px 40px; }
+    .summary { background: #fff; border-radius: 20px; padding: 28px; box-shadow: 0 16px 36px rgba(16, 42, 67, 0.1); margin-bottom: 28px; }
+    .summary h2 { margin-top: 0; color: #fff; background: linear-gradient(135deg, #1f4978, #3f81c1); display: inline-block; padding: 10px 16px; border-radius: 12px; }
+    .summary p { line-height: 1.75; color: #334e68; margin-top: 18px; }
+    .state-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-top: 22px; }
+    .state-card { background: linear-gradient(180deg, #ffffff 0%, #eef6ff 100%); border-radius: 18px; padding: 20px; border-left: 6px solid #3f81c1; box-shadow: 0 14px 30px rgba(16, 42, 67, 0.08); }
+    .state-card h3 { margin-top: 0; margin-bottom: 10px; color: #1f4978; font-size: 1.05rem; }
+    .state-card ul { margin: 0; padding-left: 18px; font-size: 0.96rem; color: #3b4f67; }
+    .state-card li { margin-bottom: 10px; line-height: 1.55; }
+    .state-section { margin-bottom: 38px; }
+    .state-section h2 { font-size: 2rem; color: #1f4978; margin-bottom: 14px; }
+    .state-details { display: grid; grid-template-columns: 1fr 320px; gap: 26px; align-items: start; margin-bottom: 30px; }
+    .state-details img { width: 100%; border-radius: 18px; box-shadow: 0 16px 34px rgba(16, 42, 67, 0.1); }
+    .state-info { background: #fff; padding: 24px; border-radius: 18px; box-shadow: 0 16px 34px rgba(16, 42, 67, 0.08); }
+    .state-info h3 { margin-top: 0; color: #1f4978; font-size: 1.3rem; }
+    .list-card { background: #fff; border-radius: 18px; padding: 24px; box-shadow: 0 16px 34px rgba(16, 42, 67, 0.08); }
     .list-card h4 { margin-top: 0; color: #244f66; }
-    .list-card ol { padding-left: 18px; }
-    .list-card li { margin-bottom: 14px; line-height: 1.6; }
+    .list-card ol { padding-left: 20px; }
+    .list-card li { margin-bottom: 16px; line-height: 1.65; }
     .highlight { color: #d87b42; font-weight: 700; }
-    .subheading { margin: 16px 0 8px; color: #1f4978; }
-    footer { text-align: center; background: #eef3f7; color: #4a5b72; padding: 18px 20px; }
-    @media (max-width: 900px) { .state-details { grid-template-columns: 1fr; } header h1 { font-size: 1.8rem; } }
-    @media (max-width: 720px) { .state-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); } .state-card h3 { font-size: 0.95rem; } nav { flex-direction: column; gap: 10px; } nav a { display: block; width: 100%; text-align: center; } }
-    @media (max-width: 500px) { header { padding: 20px 16px; } header h1 { font-size: 1.4rem; } header p { font-size: 0.9rem; } .container { padding: 16px 12px; } .state-section h2 { font-size: 1.4rem; } .state-grid { grid-template-columns: 1fr; } .summary { padding: 16px; } .state-card { padding: 14px; } }
+    .subheading { margin: 18px 0 10px; color: #1f4978; }
+    footer { text-align: center; background: #eef3f7; color: #4a5b72; padding: 20px 18px; }
+    @media (max-width: 920px) { .state-details { grid-template-columns: 1fr; } header h1 { font-size: 1.9rem; } }
+    @media (max-width: 760px) { .state-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); } nav { flex-direction: column; gap: 12px; } nav a { display: block; width: 100%; text-align: center; } }
+    @media (max-width: 520px) { header { padding: 24px 16px; } header h1 { font-size: 1.5rem; } header p { font-size: 0.95rem; } .container { padding: 18px 14px 32px; } .state-section h2 { font-size: 1.5rem; } .state-grid { grid-template-columns: 1fr; } .state-details img { height: auto; } .summary { padding: 20px; } }
+    
   </style>
 </head>
 <body>
@@ -169,7 +173,7 @@
             <li>Shop for handicrafts and textiles</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1506089676908-3592f7389d4d?auto=format&fit=crop&w=1200&q=80" alt="Rajasthan palace" />
+        <img src="https://source.unsplash.com/1200x800?rajasthan+palace,india" alt="Rajasthan palace" />
       </div>
       <div class="list-card">
         <h4>Top 10 Rajasthan Tourist Places</h4>
@@ -204,7 +208,7 @@
             <li>Birdwatching in wetlands and forests</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1519885303775-20e6988703f1?auto=format&fit=crop&w=1200&q=80" alt="Kerala backwaters" />
+        <img src="https://source.unsplash.com/1200x800?kerala+backwaters,india" alt="Kerala backwaters" />
       </div>
       <div class="list-card">
         <h4>Top 10 Kerala Tourist Places</h4>
@@ -239,7 +243,7 @@
             <li>Wildlife safaris in Jim Corbett</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80" alt="Uttarakhand mountains" />
+        <img src="https://source.unsplash.com/1200x800?uttarakhand+mountains,india" alt="Uttarakhand mountains" />
       </div>
       <div class="list-card">
         <h4>Top 10 Uttarakhand Tourist Places</h4>
@@ -274,7 +278,7 @@
             <li>Enjoy fresh Goan cuisine and market shopping</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1476231790875-016a80c274f7?auto=format&fit=crop&w=1200&q=80" alt="Goa beach" />
+        <img src="https://source.unsplash.com/1200x800?goa+beach,india" alt="Goa beach" />
       </div>
       <div class="list-card">
         <h4>Top 10 Goa Tourist Places</h4>
@@ -309,7 +313,7 @@
             <li>Discover classical dance, music, and cuisine</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80" alt="Tamil Nadu temple" />
+        <img src="https://source.unsplash.com/1200x800?tamil+nadu+temple,india" alt="Tamil Nadu temple" />
       </div>
       <div class="list-card">
         <h4>Top 10 Tamil Nadu Tourist Places</h4>
@@ -344,7 +348,7 @@
             <li>Bird watching at Pilibhit Tiger Reserve</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1533622597524-a121c2f22850?auto=format&fit=crop&w=1200&q=80" alt="Taj Mahal" />
+        <img src="https://source.unsplash.com/1200x800?taj+mahal,india" alt="Taj Mahal" />
       </div>
       <div class="list-card">
         <h4>Top 10 Uttar Pradesh Tourist Places</h4>
@@ -379,7 +383,7 @@
             <li>Enjoy beach resorts near Pune</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1552562349-68adf847a8ca?auto=format&fit=crop&w=1200&q=80" alt="Mumbai skyline" />
+        <img src="https://source.unsplash.com/1200x800?mumbai+skyline,india" alt="Mumbai skyline" />
       </div>
       <div class="list-card">
         <h4>Top 10 Maharashtra Tourist Places</h4>
@@ -414,7 +418,7 @@
             <li>Adventure sports like rafting and camping</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=1200&q=80" alt="Himachal mountains" />
+        <img src="https://source.unsplash.com/1200x800?himachal+mountains,india" alt="Himachal mountains" />
       </div>
       <div class="list-card">
         <h4>Top 10 Himachal Pradesh Tourist Places</h4>
@@ -449,7 +453,7 @@
             <li>Temple and heritage site visits</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Rann of Kutch" />
+        <img src="https://source.unsplash.com/1200x800?rann+of+kutch,india" alt="Rann of Kutch" />
       </div>
       <div class="list-card">
         <h4>Top 10 Gujarat Tourist Places</h4>
@@ -484,7 +488,7 @@
             <li>Explore colonial hill stations</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1542272605-63d39af2e1c7?auto=format&fit=crop&w=1200&q=80" alt="Darjeeling hills" />
+        <img src="https://source.unsplash.com/1200x800?darjeeling+hills,india" alt="Darjeeling hills" />
       </div>
       <div class="list-card">
         <h4>Top 10 West Bengal Tourist Places</h4>
@@ -519,7 +523,7 @@
             <li>Waterfall and forest trekking</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80" alt="Odisha temple" />
+        <img src="https://source.unsplash.com/1200x800?odisha+temple,india" alt="Odisha temple" />
       </div>
       <div class="list-card">
         <h4>Top 10 Odisha Tourist Places</h4>
@@ -554,7 +558,7 @@
             <li>Waterfall and canyon trekking</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1516926306480-530a4b1d186d?auto=format&fit=crop&w=1200&q=80" alt="Khajuraho temples" />
+        <img src="https://source.unsplash.com/1200x800?khajuraho+temples,india" alt="Khajuraho temples" />
       </div>
       <div class="list-card">
         <h4>Top 10 Madhya Pradesh Tourist Places</h4>
@@ -589,7 +593,7 @@
             <li>Temple and heritage site tours</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" alt="Coorg coffee" />
+        <img src="https://source.unsplash.com/1200x800?coorg+coffee,india" alt="Coorg coffee" />
       </div>
       <div class="list-card">
         <h4>Top 10 Karnataka Tourist Places</h4>
@@ -624,7 +628,7 @@
             <li>Explore old bazaars and taste local cuisine</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1546605238-2cdbbce9f3d6?auto=format&fit=crop&w=1200&q=80" alt="Golden Temple" />
+        <img src="https://source.unsplash.com/1200x800?golden+temple,india" alt="Golden Temple" />
       </div>
       <div class="list-card">
         <h4>Top 10 Punjab Tourist Places</h4>
@@ -659,7 +663,7 @@
             <li>Skiing and winter sports</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1519885303775-20e6988703f1?auto=format&fit=crop&w=1200&q=80" alt="Kashmir valley" />
+        <img src="https://source.unsplash.com/1200x800?kashmir+valley,india" alt="Kashmir valley" />
       </div>
       <div class="list-card">
         <h4>Top 10 Jammu & Kashmir Tourist Places</h4>
@@ -694,7 +698,7 @@
             <li>Stargazing and camping</li>
           </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1529218164296-2e20e582bc2a?auto=format&fit=crop&w=1200&q=80" alt="Ladakh landscape" />
+        <img src="https://source.unsplash.com/1200x800?ladakh+landscape,india" alt="Ladakh landscape" />
       </div>
       <div class="list-card">
         <h4>Top 10 Ladakh Tourist Places</h4>
