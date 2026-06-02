@@ -88,7 +88,7 @@
       margin-bottom: 24px;
       overflow: hidden;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-      border-left: 6px solid #3f81c1;
+      border-left: 6px solid transparent;
     }
 
     .place-card img {
@@ -97,6 +97,17 @@
       height: 240px;
       object-fit: cover;
     }
+
+    .accent-blue { border-left-color: #3f81c1; }
+    .accent-coral { border-left-color: #e76f51; }
+    .accent-teal { border-left-color: #2a9d8f; }
+    .accent-amber { border-left-color: #f4a261; }
+    .accent-slate { border-left-color: #264653; }
+    .accent-mint { border-left-color: #76c7b7; }
+    .accent-rose { border-left-color: #d62828; }
+    .accent-violet { border-left-color: #8b5cf6; }
+    .accent-olive { border-left-color: #6b8e23; }
+    .accent-gold { border-left-color: #f5c242; }
 
     .place-card-content {
       padding: 20px;
@@ -231,7 +242,7 @@
     <section id="places">
       <h2 class="section-title">Top Tourist Places</h2>
 
-      <article class="place-card" id="taj-mahal">
+      <article class="place-card accent-blue" id="taj-mahal">
         <img src="https://images.unsplash.com/photo-1533622597524-a121c2f22850?auto=format&fit=crop&w=1200&q=80" alt="Taj Mahal" />
         <div class="place-card-content">
           <h3>1. Taj Mahal, Agra</h3>
@@ -243,7 +254,7 @@
         </div>
       </article>
 
-      <article class="place-card" id="jaipur">
+      <article class="place-card accent-coral" id="jaipur">
         <img src="https://images.unsplash.com/photo-1574169208507-8437616485ef?auto=format&fit=crop&w=1200&q=80" alt="Jaipur fort" />
         <div class="place-card-content">
           <h3>2. Jaipur, Rajasthan</h3>
@@ -255,7 +266,7 @@
         </div>
       </article>
 
-      <article class="place-card" id="goa">
+      <article class="place-card accent-teal" id="goa">
         <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Goa beach" />
         <div class="place-card-content">
           <h3>3. Goa Beaches</h3>
@@ -267,7 +278,7 @@
         </div>
       </article>
 
-      <article class="place-card" id="varanasi">
+      <article class="place-card accent-amber" id="varanasi">
         <img src="https://images.unsplash.com/photo-1529285851162-01a1d2448f3b?auto=format&fit=crop&w=1200&q=80" alt="Varanasi ghats" />
         <div class="place-card-content">
           <h3>4. Varanasi, Uttar Pradesh</h3>
@@ -279,7 +290,7 @@
         </div>
       </article>
 
-      <article class="place-card" id="kerala">
+      <article class="place-card accent-slate" id="kerala">
         <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" alt="Kerala backwaters" />
         <div class="place-card-content">
           <h3>5. Kerala Backwaters</h3>
@@ -291,7 +302,7 @@
         </div>
       </article>
 
-      <article class="place-card" id="ladakh">
+      <article class="place-card accent-mint" id="ladakh">
         <img src="https://images.unsplash.com/photo-1529218164296-2e20e582bc2a?auto=format&fit=crop&w=1200&q=80" alt="Ladakh landscape" />
         <div class="place-card-content">
           <h3>6. Ladakh, Jammu & Kashmir</h3>
@@ -303,7 +314,7 @@
         </div>
       </article>
 
-      <article class="place-card" id="udaipur">
+      <article class="place-card accent-rose" id="udaipur">
         <img src="https://images.unsplash.com/photo-1561484930-22cbc06a5b36?auto=format&fit=crop&w=1200&q=80" alt="Udaipur lakes" />
         <div class="place-card-content">
           <h3>7. Udaipur, Rajasthan</h3>
@@ -315,7 +326,7 @@
         </div>
       </article>
 
-      <article class="place-card" id="hampi">
+      <article class="place-card accent-violet" id="hampi">
         <img src="https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=1200&q=80" alt="Hampi ruins" />
         <div class="place-card-content">
           <h3>8. Hampi, Karnataka</h3>
@@ -327,7 +338,7 @@
         </div>
       </article>
 
-      <article class="place-card" id="andaman">
+      <article class="place-card accent-olive" id="andaman">
         <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Andaman beach" />
         <div class="place-card-content">
           <h3>9. Andaman Islands</h3>
@@ -339,7 +350,7 @@
         </div>
       </article>
 
-      <article class="place-card" id="golden-temple">
+      <article class="place-card accent-gold" id="golden-temple">
         <img src="https://images.unsplash.com/photo-1546605238-2cdbbce9f3d6?auto=format&fit=crop&w=1200&q=80" alt="Golden Temple" />
         <div class="place-card-content">
           <h3>10. Golden Temple, Amritsar</h3>
