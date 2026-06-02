@@ -22,7 +22,7 @@
     .activity-grid { display: grid; gap: 24px; margin-top: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .activity-card { border-radius: 20px; overflow: hidden; box-shadow: 0 16px 30px rgba(0,0,0,0.28); transition: transform 0.25s ease, box-shadow 0.25s ease; }
     .activity-card:hover { transform: translateY(-4px); box-shadow: 0 22px 42px rgba(0,0,0,0.35); }
-    .activity-card img { width: 100%; height: 260px; object-fit: cover; display: block; }
+    .activity-card img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
     .activity-info { padding: 24px; background: rgba(255,255,255,0.06); }
     .activity-info h3 { margin-top: 0; color: #f4f8ff; font-size: 1.35rem; }
     .activity-info p { margin: 12px 0; line-height: 1.75; font-size: 1rem; color: #d8e6ff; }
@@ -33,7 +33,7 @@
     footer { text-align: center; padding: 20px 18px; background: rgba(255,255,255,0.05); color: #b8c8ff; }
     @media (max-width: 860px) { .activity-grid { grid-template-columns: 1fr; } header h1 { font-size: 2rem; } }
     @media (max-width: 720px) { nav { flex-direction: column; gap: 10px; } nav a { display: block; width: 100%; text-align: center; } .activity-section { padding: 22px; } }
-    @media (max-width: 520px) { header { padding: 22px 16px; } header h1 { font-size: 1.6rem; } .container { padding: 18px 14px; } .activity-section { padding: 18px; margin-bottom: 20px; } .activity-card img { height: 220px; } .activity-info { padding: 18px; } .activity-meta { flex-direction: column; gap: 12px; } }
+    @media (max-width: 520px) { header { padding: 22px 16px; } header h1 { font-size: 1.6rem; } .container { padding: 18px 14px; } .activity-section { padding: 18px; margin-bottom: 20px; } .activity-card img { height: auto; } .activity-info { padding: 18px; } .activity-meta { flex-direction: column; gap: 12px; } }
     
   </style>
 </head>
@@ -53,7 +53,7 @@
       <p>For adrenaline seekers, India offers some of the world’s best adventure destinations. These places combine rugged terrain, fresh air, and thrilling experiences.</p>
       <div class="activity-grid">
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?rishikesh+rafting,india" alt="River rafting" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?rishikesh+rafting,india" alt="River rafting" />
           <div class="activity-info">
             <h3>Rishikesh</h3>
             <p>Known as the adventure capital of India, Rishikesh offers world-class white-water rafting on the Ganges, high-rope courses, bungee jumping, and camping by the river.</p>
@@ -65,7 +65,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?bir+billing+paragliding,india" alt="Paragliding" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?bir+billing+paragliding,india" alt="Paragliding" />
           <div class="activity-info">
             <h3>Bir Billing</h3>
             <p>Bir Billing is one of the best paragliding sites in Asia. The calm valley and strong mountain thermals make it easy to enjoy long flights and incredible Himalayan views.</p>
@@ -77,7 +77,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?ladakh+trekking,india" alt="Trekking" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?ladakh+trekking,india" alt="Trekking" />
           <div class="activity-info">
             <h3>Ladakh</h3>
             <p>Ladakh’s high-altitude landscapes are ideal for trekking, mountain biking, and river rafting. The dramatic mountain passes and isolated villages make every adventure unforgettable.</p>
@@ -89,7 +89,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?spiti+camping,india" alt="Camping" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?spiti+camping,india" alt="Camping" />
           <div class="activity-info">
             <h3>Spiti Valley</h3>
             <p>Spiti Valley offers off-grid adventure with rugged roads, high-altitude lakes, and Buddhist monasteries. It is perfect for travelers who want dramatic landscapes and remote camping.</p>
@@ -101,7 +101,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?coorg+forest,india" alt="Rock climbing" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?coorg+forest,india" alt="Rock climbing" />
           <div class="activity-info">
             <h3>Coorg</h3>
             <p>Coorg combines forest trails, waterfalls, and coffee plantations with excellent opportunities for trekking and river trekking. It is a lush adventure destination in the Western Ghats.</p>
@@ -120,7 +120,7 @@
       <p>India’s coastline offers everything from party beaches to quiet coves. These destinations are selected for their beauty, amenities, and beach-based activities.</p>
       <div class="activity-grid">
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800?goa+beach,india" alt="Goa beach" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?goa+beach,india" alt="Goa beach" />
           <div class="activity-info">
             <h3>Goa</h3>
             <p>Goa is the most famous beach destination in India, offering lively nightlife, beach shacks, and water sports. It is perfect for both party-goers and sun-seekers.</p>
@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?andaman+snorkeling,india" alt="Andaman beach" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?andaman+snorkeling,india" alt="Andaman beach" />
           <div class="activity-info">
             <h3>Andaman Islands</h3>
             <p>The Andamans are a tropical paradise with clear waters, coral reefs, and scenic beaches. This destination is ideal for snorkeling and diving.</p>
@@ -144,7 +144,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?varkala+cliff+beach,india" alt="Kerala beach" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?varkala+cliff+beach,india" alt="Kerala beach" />
           <div class="activity-info">
             <h3>Varkala</h3>
             <p>Varkala offers dramatic cliff-edge beaches and a laid-back coastal vibe. Its clear waters and seaside cafes make it a great beach retreat.</p>
@@ -156,7 +156,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?pondicherry+promenade,india" alt="Pondicherry beach" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?pondicherry+promenade,india" alt="Pondicherry beach" />
           <div class="activity-info">
             <h3>Pondicherry</h3>
             <p>Pondicherry blends French Quarter charm with serene beach stretches. It is perfect for relaxing walks, seaside cafes, and easy coastal exploration.</p>
@@ -168,7 +168,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?havelock+radhanagar,india" alt="Andaman Radhanagar" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?havelock+radhanagar,india" alt="Andaman Radhanagar" />
           <div class="activity-info">
             <h3>Havelock Island</h3>
             <p>Havelock Island is famous for its turquoise waters and Radhanagar Beach. It offers a perfect mix of beach relaxation and underwater adventure.</p>
@@ -187,7 +187,7 @@
       <p>Family-friendly destinations in India offer safe, comfortable, and memorable experiences. These places have plenty of attractions for children, cultural exposure, and easy logistics.</p>
       <div class="activity-grid">
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?ooty+toy+train,india" alt="Ooty tea gardens" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?ooty+toy+train,india" alt="Ooty tea gardens" />
           <div class="activity-info">
             <h3>Ooty</h3>
             <p>Ooty is a charming hill station with botanical gardens, toy train rides, and gentle lakes. It is peaceful, scenic, and perfect for families.</p>
@@ -199,7 +199,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?munnar+tea+gardens,india" alt="Munnar tea" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?munnar+tea+gardens,india" alt="Munnar tea" />
           <div class="activity-info">
             <h3>Munnar</h3>
             <p>Munnar’s tea gardens, waterfalls, and gentle trails make it a great family destination. Children enjoy the cool weather and open spaces.</p>
@@ -211,7 +211,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?mahabalipuram+shore+temple,india" alt="Mahabalipuram" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?mahabalipuram+shore+temple,india" alt="Mahabalipuram" />
           <div class="activity-info">
             <h3>Pondicherry</h3>
             <p>Pondicherry provides a family-friendly coastal getaway with calm beaches, quiet streets, and pleasant cafes. It's easy to explore and relaxed.</p>
@@ -223,7 +223,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?jaipur+city+palace,india" alt="Jaipur City Palace" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?jaipur+city+palace,india" alt="Jaipur City Palace" />
           <div class="activity-info">
             <h3>Jaipur</h3>
             <p>Jaipur’s castles, elephant rides, and interactive forts are exciting for children and parents alike. It combines history with bright bazaars and vibrant food.</p>
@@ -235,7 +235,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?nainital+boat,india" alt="Nainital lake" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?nainital+boat,india" alt="Nainital lake" />
           <div class="activity-info">
             <h3>Nainital</h3>
             <p>Nainital offers a lakeside retreat with boating, toy train rides, and easy hill walks. Families enjoy the cool climate and scenic mountain views.</p>
@@ -254,7 +254,7 @@
       <p>Mountain travel in India is perfect for cooler weather, dramatic views, and outdoor adventure. These destinations offer a range of activities from gentle hill station walks to rugged trekking.</p>
       <div class="activity-grid">
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?manali+solang+valley,india" alt="Nainital mountains" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?manali+solang+valley,india" alt="Nainital mountains" />
           <div class="activity-info">
             <h3>Manali</h3>
             <p>Manali is a popular mountain resort offering snow, scenic valleys, and adventure travel. It is a gateway to nearby high-altitude lakes and treks.</p>
@@ -266,7 +266,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?dharamshala+monastery,india" alt="Himachal hikes" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?dharamshala+monastery,india" alt="Himachal hikes" />
           <div class="activity-info">
             <h3>Dharamshala</h3>
             <p>Dharamshala and McLeod Ganj are peaceful mountain retreats with Tibetan culture, tea gardens, and scenic walking trails.</p>
@@ -278,7 +278,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?shimla+mall+road,india" alt="Shimla hills" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?shimla+mall+road,india" alt="Shimla hills" />
           <div class="activity-info">
             <h3>Shimla</h3>
             <p>Shimla is a classic hill station with colonial charm, pedestrian streets, and panoramic mountain views.</p>
@@ -290,7 +290,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?darjeeling+tea+estate,india" alt="Darjeeling hills" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?darjeeling+tea+estate,india" alt="Darjeeling hills" />
           <div class="activity-info">
             <h3>Darjeeling</h3>
             <p>Darjeeling offers winding tea gardens, a toy train ride, and sweeping views of the Himalayas including Kanchenjunga.</p>
@@ -302,7 +302,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?coorg+coffee+plantation,india" alt="Munnar hills" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?coorg+coffee+plantation,india" alt="Munnar hills" />
           <div class="activity-info">
             <h3>Coorg</h3>
             <p>Coorg’s misty hills, coffee plantations, and forest trails offer a lush mountain escape in southern India.</p>
@@ -321,7 +321,7 @@
       <p>India is a land of spiritual pilgrimage routes and sacred festivals. These destinations attract seekers, history lovers, and devotees from across the world.</p>
       <div class="activity-grid">
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?varanasi+ghats,india" alt="Varanasi ghats" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?varanasi+ghats,india" alt="Varanasi ghats" />
           <div class="activity-info">
             <h3>Varanasi</h3>
             <p>Varanasi is one of the oldest living cities in the world, known for its ghats, evening Ganga Aarti, and spiritual atmosphere.</p>
@@ -333,7 +333,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?rameswaram+temple,india" alt="Rameshwaram temple" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?rameswaram+temple,india" alt="Rameshwaram temple" />
           <div class="activity-info">
             <h3>Rameswaram</h3>
             <p>Rameswaram is an important pilgrimage town with historic temples and a sacred connection to the Ramayana.</p>
@@ -345,7 +345,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?golden+temple+amritsar,india" alt="Golden Temple" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?golden+temple+amritsar,india" alt="Golden Temple" />
           <div class="activity-info">
             <h3>Amritsar</h3>
             <p>Amritsar is home to the Golden Temple, a sacred Sikh site known for its glowing architecture and welcoming community kitchen.</p>
@@ -357,7 +357,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?madurai+meenakshi+temple,india" alt="Madurai temple" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?madurai+meenakshi+temple,india" alt="Madurai temple" />
           <div class="activity-info">
             <h3>Madurai</h3>
             <p>Madurai is famous for its Meenakshi Temple, vibrant festivals, and Dravidian temple art.</p>
@@ -369,7 +369,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?vaishno+devi,india" alt="Vaishno Devi" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?vaishno+devi,india" alt="Vaishno Devi" />
           <div class="activity-info">
             <h3>Katra / Vaishno Devi</h3>
             <p>A major pilgrimage destination in Jammu & Kashmir, Vaishno Devi draws spiritual travelers on a mountain trek to the sacred cave shrine.</p>
@@ -388,7 +388,7 @@
       <p>Resort stays are ideal when you want luxury, ease, and a full-service holiday. These destinations offer premium accommodations, spa treatments, and immersive local experiences.</p>
       <div class="activity-grid">
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?goa+luxury+resort,india" alt="Luxury resort" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?goa+luxury+resort,india" alt="Luxury resort" />
           <div class="activity-info">
             <h3>Goa Resorts</h3>
             <p>Goa’s seaside resorts are perfect for beach relaxation with pools, spa treatments, and easy access to coastal dining.</p>
@@ -400,7 +400,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?shimla+resort,india" alt="Hill resort" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?shimla+resort,india" alt="Hill resort" />
           <div class="activity-info">
             <h3>Shimla Resorts</h3>
             <p>Shimla resorts offer mountain views, cottages, and cozy amenities in a cool hill-station setting.</p>
@@ -412,7 +412,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?kerala+backwater+resort,india" alt="Backwater resort" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?kerala+backwater+resort,india" alt="Backwater resort" />
           <div class="activity-info">
             <h3>Kerala Backwater Resorts</h3>
             <p>Kerala’s backwater resorts bring luxury to the riverside with private patios, traditional Kerala food, and slow-paced wellness.</p>
@@ -424,7 +424,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?rajasthan+heritage+resort,india" alt="Desert resort" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?rajasthan+heritage+resort,india" alt="Desert resort" />
           <div class="activity-info">
             <h3>Rajasthan Heritage Resorts</h3>
             <p>Rajasthan resorts offer a royal stay in converted palaces with evening performances, heritage dining, and desert excursions.</p>
@@ -436,7 +436,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?coorg+resort,india" alt="Hill resort villas" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?coorg+resort,india" alt="Hill resort villas" />
           <div class="activity-info">
             <h3>Coorg Resorts</h3>
             <p>Coorg resorts combine luxury with forest views, plantation activities, and restful ambiance.</p>
@@ -455,7 +455,7 @@
       <p>India's wildlife safaris offer thrilling encounters with endangered species in their natural habitats. From Bengal tigers to one-horned rhinos, these sanctuaries provide world-class wildlife viewing experiences.</p>
       <div class="activity-grid">
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?kanha+tiger+safari,india" alt="Tiger safari" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?kanha+tiger+safari,india" alt="Tiger safari" />
           <div class="activity-info">
             <h3>Kanha National Park</h3>
             <p>Kanha is a premier tiger reserve and the inspiration for Rudyard Kipling's Jungle Book. It is famous for healthy tiger populations and diverse wildlife viewing opportunities.</p>
@@ -469,7 +469,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?bandhavgarh+tiger+safari,india" alt="Bandhavgarh safari" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?bandhavgarh+tiger+safari,india" alt="Bandhavgarh safari" />
           <div class="activity-info">
             <h3>Bandhavgarh National Park</h3>
             <p>Bandhavgarh is one of India's most popular tiger reserves with one of the highest tiger densities. Named after an ancient hilltop fort, it combines history with wildlife adventure.</p>
@@ -483,7 +483,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?kaziranga+rhino+safari,india" alt="Kaziranga safari" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?kaziranga+rhino+safari,india" alt="Kaziranga safari" />
           <div class="activity-info">
             <h3>Kaziranga National Park</h3>
             <p>Kaziranga is the world's largest population of one-horned rhinos. Located in the river islands of Assam, it's a UNESCO World Heritage site with exceptional biodiversity.</p>
@@ -497,7 +497,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?jim+corbett+jeep+safari,india" alt="Jim Corbett safari" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?jim+corbett+jeep+safari,india" alt="Jim Corbett safari" />
           <div class="activity-info">
             <h3>Jim Corbett National Park</h3>
             <p>India's first national park, Jim Corbett is named after legendary hunter Jim Corbett. Nestled in the Himalayas, it offers stunning scenery combined with tiger viewing opportunities.</p>
@@ -511,7 +511,7 @@
           </div>
         </div>
         <div class="activity-card">
-          <img src="https://source.unsplash.com/1200x800/?sundarbans+mangrove,india" alt="Sundarbans safari" />
+          <img loading="lazy" src="https://source.unsplash.com/800x533/?sundarbans+mangrove,india" alt="Sundarbans safari" />
           <div class="activity-info">
             <h3>Sundarbans Tiger Reserve</h3>
             <p>Sundarbans is a vast mangrove forest delta and the largest tiger habitat in the world. It's a UNESCO World Heritage site offering a unique ecosystem on the Bengal-Bangladesh border.</p>
